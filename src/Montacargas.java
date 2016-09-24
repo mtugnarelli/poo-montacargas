@@ -26,4 +26,12 @@ public class Montacargas {
 		
 		return cargaMaximaSoportada;
 	}
+	
+	/**
+	 * post: devuelve la carga actual [Kg] 
+	 */
+	public double obtenerCarga() {
+		
+		return carga;
+	}
 }
