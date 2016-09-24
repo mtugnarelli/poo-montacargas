@@ -34,4 +34,17 @@ public class Montacargas {
 		
 		return carga;
 	}
+	
+	/**
+	 * pre : no está cargado y 'unaCarga' es un valor mayor a cero.
+	 * post: coloca 'unaCarga' [Kg] en el Montacargas.
+	 */
+	public void cargar(double unaCarga) {
+		
+		if ((carga == 0) && 
+			(unaCarga > 0) && (unaCarga <= cargaMaximaSoportada)) {
+			
+			carga = unaCarga;
+		}
+	}
 }
