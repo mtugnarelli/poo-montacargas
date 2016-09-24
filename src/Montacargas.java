@@ -7,6 +7,8 @@ public class Montacargas {
 	
 	private int cargasRealizadas = 0;
 	
+	private double cargasAcumuladas = 0.0;
+	
 	/**
 	 * pre : 'pesoDeLaCargaMaxima' es un valor mayor a cero.
 	 * post: Montacargas sin carga, listo para cargar hasta
@@ -66,6 +68,7 @@ public class Montacargas {
 		
 		if (estaCargado()) {
 			
+			cargasAcumuladas = cargasAcumuladas + carga;
 			carga = 0;
 			cargasRealizadas = cargasRealizadas + 1;
 		}
