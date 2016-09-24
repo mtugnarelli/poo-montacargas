@@ -1,12 +1,14 @@
-UNTreF - Algoritmos y Programación 1
+UNTreF - Algoritmos y ProgramaciÃ³n 1
 
-# Práctica de Encapsulamiento - Montacargas
+# PrÃ¡ctica de Encapsulamiento - Montacargas
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Forklift_Truck-blank.svg" width="100%" height="144">
 
 ### Enunciado
 
 Implementar la clase Montacargas con las siguientes operaciones:
 
-* crear el Montacargas recibiendo como parámetro el peso máximo (Kg) que puede cargar. 
+* crear el Montacargas recibiendo como parÃ¡metro el peso mÃ¡ximo (Kg) que puede cargar. 
 
 * obtenerCarga: devuelve el peso (Kg) de la carga que tiene actualmente.
 
@@ -17,9 +19,8 @@ Implementar la clase Montacargas con las siguientes operaciones:
 * obtenerCargaPromedio: devuelve el peso (Kg) promedio de las cargas completadas 
  (cargadas y luegodescargadas)
  
- 
 Ejemplifique el uso de la clase, indicando el resultado esperado.
 
-### Solución
+### SoluciÃ³n
 
 `Montacargas.java` [ver](../master/src/Montacargas.java)
