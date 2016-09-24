@@ -9,6 +9,8 @@ public class Montacargas {
 	
 	private double cargaAcumuladas = 0.0;
 	
+	private double cargaMaxima = 0;
+	
 	/**
 	 * pre : 'pesoDeLaCargaMaxima' es un valor mayor a cero.
 	 * post: Montacargas sin carga, listo para cargar hasta
@@ -49,6 +51,11 @@ public class Montacargas {
 			(unaCarga > 0) && (unaCarga <= cargaMaximaSoportada)) {
 			
 			carga = unaCarga;
+			
+			if (carga > cargaMaxima) {
+				
+				cargaMaxima = carga;
+			}
 		}
 	}
 	
@@ -88,5 +95,13 @@ public class Montacargas {
 		}
 		
 		return cargaPromedio;
+	}
+	
+	/**
+	 * post: devuelve el peso [Kg] que el Montacargas ha cargado.
+	 */
+	public double obtenerCargaMaxima() { 
+		
+		return cargaMaxima;
 	}
 }
