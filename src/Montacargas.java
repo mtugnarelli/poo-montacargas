@@ -11,6 +11,8 @@ public class Montacargas {
 	
 	private double cargaMaxima = 0;
 	
+	private double cargaMinima = 0;
+	
 	/**
 	 * pre : 'pesoDeLaCargaMaxima' es un valor mayor a cero.
 	 * post: Montacargas sin carga, listo para cargar hasta
@@ -55,6 +57,12 @@ public class Montacargas {
 			if (carga > cargaMaxima) {
 				
 				cargaMaxima = carga;
+			}
+			
+			if ((cargasRealizadas == 0) ||
+				(carga < cargaMinima)) {
+				
+				cargaMinima = carga;
 			}
 		}
 	}
