@@ -41,10 +41,18 @@ public class Montacargas {
 	 */
 	public void cargar(double unaCarga) {
 		
-		if ((carga == 0) && 
+		if (! estaCargado() && 
 			(unaCarga > 0) && (unaCarga <= cargaMaximaSoportada)) {
 			
 			carga = unaCarga;
 		}
+	}
+	
+	/**
+	 * post: devuelve si el Montacargas actualmente está cargado.
+	 */
+	public boolean estaCargado() {
+		
+		return (carga > 0);
 	}
 }
