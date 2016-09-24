@@ -7,7 +7,7 @@ public class Montacargas {
 	
 	private int cargasRealizadas = 0;
 	
-	private double cargasAcumuladas = 0.0;
+	private double cargaAcumuladas = 0.0;
 	
 	/**
 	 * pre : 'pesoDeLaCargaMaxima' es un valor mayor a cero.
@@ -68,9 +68,25 @@ public class Montacargas {
 		
 		if (estaCargado()) {
 			
-			cargasAcumuladas = cargasAcumuladas + carga;
+			cargaAcumuladas = cargaAcumuladas + carga;
 			carga = 0;
 			cargasRealizadas = cargasRealizadas + 1;
 		}
+	}
+	
+	/**
+	 * post: devuelve el peso [Kg] promedio de las cargas completadas,
+	 *       es decir que fueron cargadas y descargadas.
+	 */
+	public double obtenerCargaPromedio() {
+		
+		double cargaPromedio = 0;
+		
+		if (cargasRealizadas > 0) {
+			
+			cargaPromedio = cargaAcumuladas / cargasRealizadas;
+		}
+		
+		return cargaPromedio;
 	}
 }
