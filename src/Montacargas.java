@@ -55,4 +55,16 @@ public class Montacargas {
 		
 		return (carga > 0);
 	}
+	
+	/**
+	 * pre : está cargado.
+	 * post: retira la carga del Montacagas.
+	 */
+	public void descargar() {
+		
+		if (estaCargado()) {
+			
+			carga = 0;
+		}
+	}
 }
