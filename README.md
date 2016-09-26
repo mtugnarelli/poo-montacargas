@@ -2,7 +2,7 @@ UNTreF - Algoritmos y Programación 1
 
 # Práctica de Encapsulamiento - Montacargas
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Forklift_Truck-blank.svg" width="100%" height="144">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Forklift_Truck-blank.svg" height="144">
 
 ### Enunciado
 
